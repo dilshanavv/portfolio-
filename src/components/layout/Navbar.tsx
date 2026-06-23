@@ -93,7 +93,7 @@ export function Navbar() {
           onClick={(e) => handleNavClick(e, "#about")}
           className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
         >
-          Vipul<span className="text-white"> Jha</span>.
+          Dil<span className="text-white">sana</span>.
         </Link>
 
         {/* Desktop Nav */}

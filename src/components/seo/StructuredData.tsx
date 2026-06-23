@@ -9,23 +9,26 @@ export function StructuredData() {
     name: portfolioData.name,
     jobTitle: portfolioData.role,
     description: portfolioData.about,
-    url: "https://www.vipuljha.com",
-    image: "https://www.vipuljha.com/images/profile.webp",
+    url: "https://www.dilsana.com",
+    image: "https://www.dilsana.com/images/profile.webp",
     sameAs: portfolioData.social
       .filter((s) => s.platform !== "Email")
       .map((s) => s.url),
     worksFor: {
       "@type": "Organization",
-      name: "Primebook India",
+      name: "Yoro Technologies",
     },
     knowsAbout: [
-      "Android Development",
-      "Flutter Development",
-      "Kotlin",
-      "Jetpack Compose",
-      "Mobile App Development",
-      "AOSP",
-      "Chromium",
+      "Web Development",
+      "Full Stack Development",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "RESTful APIs",
+      "Socket.IO",
     ],
   };
 
@@ -34,7 +37,7 @@ export function StructuredData() {
     "@type": "WebSite",
     name: `${portfolioData.name} Portfolio`,
     description: portfolioData.about,
-    url: "https://www.vipuljha.com",
+    url: "https://www.dilsana.com",
     author: {
       "@type": "Person",
       name: portfolioData.name,

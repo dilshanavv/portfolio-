@@ -34,9 +34,9 @@ export interface PortfolioData {
   blogUrl?: string;
   social: SocialLink[];
   skills: {
-    mobile: string[];
-    libraries: string[];
-    web: string[];
+    frontend: string[];
+    backend: string[];
+    database: string[];
     tools: string[];
   };
   experience: Experience[];
@@ -44,100 +44,75 @@ export interface PortfolioData {
 }
 
 export const portfolioData: PortfolioData = {
-  name: "Vipul Jha",
-  role: "Android & Flutter Developer",
+  name: "Dilsana",
+  role: "Full Stack Developer",
   about:
-    "I’m an Android Developer with 4+ years of experience creating high-quality mobile applications. My expertise spans Java, Kotlin, Jetpack Compose, and modern Android architecture, with additional experience in Flutter for cross-platform development. I’ve also worked extensively with AOSP and Chromium, giving me a strong foundation across both software and system-level development.",
+    "I’m a Full Stack Developer with 1+ year of experience building scalable and user-focused web applications. My expertise spans React.js, Next.js, Node.js, Express.js, MongoDB, and MySQL, enabling me to develop responsive frontend interfaces, secure backend systems, and database-driven solutions. I have hands-on experience creating RESTful APIs, implementing JWT authentication, role-based access control, and real-time features using modern JavaScript technologies. With a strong foundation in software engineering principles, SDLC practices, API integration, and performance optimization, I’m passionate about delivering high-quality, efficient, and scalable digital solutions.",
   profileImage: "/images/profile.webp",
-  blogUrl: "https://medium.com/@lordarcadius",
   social: [
     {
       platform: "GitHub",
-      url: "https://github.com/lordarcadius",
+      url: "https://github.com/Dilshna-git",
       icon: "Github",
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/lordarcadius",
+      url: "https://www.linkedin.com/in/dilshana-vv-9282b6212",
       icon: "Linkedin",
     },
     {
-      platform: "X",
-      url: "https://x.com/lordarcadius",
-      icon: "Twitter", // Lucide might not have X yet, using Twitter as fallback or X if available in next step
-    },
-    {
-      platform: "Instagram",
-      url: "https://instagram.com/lordarcadius",
-      icon: "Instagram",
-    },
-    {
-      platform: "Medium",
-      url: "https://medium.com/@lordarcadius",
-      icon: "BookText", // Using BookText as a generic icon for Medium if branded one is missing
-    },
-    {
       platform: "Email",
-      url: "mailto:hey@vipuljha.com",
+      url: "dilshanavv8.com",
       icon: "Mail",
     },
   ],
   skills: {
-    mobile: [
-      "Kotlin",
-      "Java",
-      "Jetpack Compose",
-      "Flutter",
-      "Dart",
-      "Android SDK",
-      "AOSP",
+    frontend: [
+      "React.js",
+      "Next.js",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "TailwindCSS",
+      "Bootstrap",
     ],
-    libraries: [
-      "Hilt",
-      "Retrofit",
-      "Room",
-      "Coroutines",
-      "Flow",
-      "Bloc",
-      "GetIt",
+    backend: [
+      "Node.js",
+      "Express.js",
+      "RESTful APIs",
+      "Socket.IO",
+      "JWT Authentication",
+      "NFC Integration",
     ],
-    web: [
-      "REST APIs",
-      "AWS Lambda",
-      "Firebase",
-      "Supabase",
+    database: [
+      "MongoDB",
       "MySQL",
-      "SQLite",
-      "Cloudflare",
-      "AWS S3",
-      "JavaScript",
-      "HTML",
-      "CSS",
     ],
-    tools: ["Git", "Android Studio", "Postman", "VS Code", "IntelliJ IDEA"],
+    tools: ["Git", "GitHub", "Postman", "VS Code", "NPM"],
   },
   experience: [
     {
-      company: "Primebook India",
-      role: "Senior Software Engineer (SDE-2)",
-      period: "May, 2023 - Present",
+      company: "Yoro Technologies | Calicut",
+      role: "Junior Software Developer",
+      period: "Oct, 2025 - Present",
       description: [
-        "Built PrimeSecure MDM for PrimeOS 3.0, leveraging DevicePolicyManager.",
-        "Enhanced Prime Browser with feaures like background playback, MDM, etc.",
-        "Created SOPs and Scripts for syncing, managing and building Chromium.",
-        "Migrated App Store storage to Cloudflare R2, saving over $2000/month.",
-        "Developed internal APIs, tools, & the early Cloud PC backend with Cashfree PG.",
+        "Architected a multi-tenant React/Node.js food delivery platform with dynamic menus, RBAC, and JWT auth.",
+        "Led development of a SaaS HRMS, integrating real-time chat functionality using Socket.IO.",
+        "Engineered AI school tools, including timetable generators, GPS bus tracking, and fuel management.",
+        "Implemented FCM push notifications and automated background tasks with Node-Cron.",
+        "Developed secure NFC Business Card solutions in Next.js for contactless profile sharing.",
+        "Built secure Node.js/Express APIs (tested via Postman) in Agile/Git version-controlled sprints.",
       ],
     },
     {
-      company: "Primebook India",
-      role: "Android Engineer",
-      period: "Sep, 2021 - May, 2023",
+      company: "Mashupstack | Kochi",
+      role: "MERN Full Stack Developer Trainee",
+      period: "2024 - 2025",
       description: [
-        "Built the PikaPika MDM dashboard in Flutter Web.",
-        "Developed PrimeOS apps including Game Center and App Store.",
-        "Initiated the PrimeOS Browser project and maintained it.",
-        "Worked on APIs supporting PrimeOS MDM and system services.",
+        "Completed intensive, hands-on training in the MERN stack (MongoDB, Express.js, React.js, Node.js), building end-to-end web applications with robust user authentication and database integration.",
+        "Developed dynamic and responsive frontend interfaces in React.js and constructed scalable RESTful backend services utilizing Node.js and Express.js.",
+        "Designed structured database schemas and implemented complex CRUD operations using MongoDB.",
+        "Conducted rigorous API testing, debugging, and integration validation using Postman to ensure backend reliability.",
       ],
     },
   ],
@@ -147,7 +122,7 @@ export const portfolioData: PortfolioData = {
       description:
         "COVID-19 Status is a free and open-source Android app that provides real-time COVID-19 statistics across India and worldwide, featuring a clean, fast, and responsive user interface.",
       techStack: ["Java", "XML", "Firebase", "Rest APIs"],
-      link: "https://project.vipuljha.com/covid",
+      link: "https://project.dilsana.com/covid",
       github: "https://github.com/Coders-Of-XDA-OT/covid19-status-android",
       thumbnail: "/images/projects/covid.webp",
     },
@@ -157,7 +132,7 @@ export const portfolioData: PortfolioData = {
         "ElectraBlue is a flash-and-forget custom kernel for supported Android devices, built to deliver a stable, smooth, and battery-efficient experience with thoughtful customization options using apps like Kernel Adiutor.",
       techStack: ["Linux", "C", "Makefile", "Bash"],
       link: "https://xdaforums.com/t/kernel-mido-oreo-pie-electrablue-kernel-21-0-july-06-redmi-note-4.3655651",
-      github: "https://github.com/lordarcadius/electrablue_mido",
+      github: "https://github.com/Dilshna-git/electrablue_mido",
       thumbnail: "/images/projects/eb.webp",
     },
     {
@@ -165,8 +140,8 @@ export const portfolioData: PortfolioData = {
       description:
         "A previous version of my personal portfolio website showcasing my projects, work experience, and resume before launching the further iterations built in more modern tech stack.",
       techStack: ["HTML", "CSS", "Bootstrap", "JQuery"],
-      link: "https://project.vipuljha.com/website",
-      github: "https://github.com/lordarcadius/website",
+      link: "https://project.dilsana.com/website",
+      github: "https://github.com/Dilshna-git/website",
       thumbnail: "/images/projects/portfolio.webp",
     },
     {
@@ -175,7 +150,7 @@ export const portfolioData: PortfolioData = {
         "ABS Tweaks (Arkaynine Boost Script) is a collection of shell-based performance optimizations for Android devices, designed to improve speed and battery life. It has been downloaded over 200,000 times.",
       techStack: ["Shell", "BusyBox", "Terminal Emulator", "SuperSU"],
       link: "https://xdaforums.com/t/tweak-mod-arm-x86-project-dark-booster-abs-tweaks-v5-0-2-3-6-0-23-01-2016.3120404",
-      github: "https://github.com/lordarcadius/ABS-Tweaks",
+      github: "https://github.com/Dilshna-git/ABS-Tweaks",
       thumbnail: "/images/projects/abs.webp",
     },
     {
